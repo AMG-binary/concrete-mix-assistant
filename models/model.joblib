@@ -1,4 +1,0 @@
-joblib.dump(
-    {"model": winner, "features": FEATURES, "model_type": winner_name},
-    MODEL_DIR / "model.joblib",
-)
