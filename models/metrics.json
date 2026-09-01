@@ -1,1 +1,12 @@
-
+{
+  "model_type": "XGBoost",
+  "random_state": 42,
+  "test_size": 0.2,
+  "n_samples": 1030,
+  "n_train": 824,
+  "n_test": 206,
+  "cv_r2_mean": 0.9222,
+  "test_r2": 0.9252,
+  "test_rmse": 4.389,
+  "age_policy": "Trained on all ages; app predicts at fixed age=28 days."
+}
