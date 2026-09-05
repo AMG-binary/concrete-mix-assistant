@@ -142,7 +142,7 @@ def generate_recommendation(
     else:
         current_wc = working_mix["water"] / working_mix["cement"]
 
-    if current_wc > limits["max_wc"]:
+        if current_wc > limits["max_wc"]:
         maximum_water = (
             working_mix["cement"] * limits["max_wc"]
         )
@@ -157,7 +157,7 @@ def generate_recommendation(
             notes=notes,
         )
 
-         actions.append(
+        actions.append(
             f"Reduce water by -{water_delta:.1f} kg/m3 "
             f"(from {original_mix['water']:.1f} to "
             f"{working_mix['water']:.1f} kg/m3) to bring the W/C ratio "
