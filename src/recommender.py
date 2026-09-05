@@ -157,5 +157,10 @@ def generate_recommendation(
             notes=notes,
         )
 
-        actions.append(
-            f"Reduce water by -{water_delta:.1f} kg/
+         actions.append(
+            f"Reduce water by -{water_delta:.1f} kg/m3 "
+            f"(from {original_mix['water']:.1f} to "
+            f"{working_mix['water']:.1f} kg/m3) to bring the W/C ratio "
+            f"from {current_wc:.3f} down to the IS 456 maximum of "
+            f"{limits['max_wc']:.2f} for {target_grade}."
+        )
